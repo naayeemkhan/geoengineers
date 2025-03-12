@@ -19,6 +19,7 @@ const buttonVariants = cva(
         md: "h-10 py-2 px-4",
         lg: "h-11 px-8",
         icon: "h-10 w-10",
+        default: "h-10 py-2 px-4", // Add default size that maps to md
       },
     },
     defaultVariants: {
@@ -38,36 +39,39 @@ export interface ButtonProps
   asChild?: boolean;
 }
 
-const Button = ({
-  variant = "primary",
-  size = "md",
-  children,
-  className,
-  icon,
-  iconPosition = "left",
-  asChild = false,
-  ...props
-}: ButtonProps) => {
-  const Comp = asChild ? React.Fragment : "button";
-  
-  return (
-    <Comp
-      className={cn(
-        buttonVariants({ variant, size }),
-        className
-      )}
-      {...props}
-    >
-      {icon && iconPosition === "left" && (
-        <span className="mr-2">{icon}</span>
-      )}
-      {children}
-      {icon && iconPosition === "right" && (
-        <span className="ml-2">{icon}</span>
-      )}
-    </Comp>
-  );
-};
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+  ({
+    variant = "primary",
+    size = "md",
+    children,
+    className,
+    icon,
+    iconPosition = "left",
+    asChild = false,
+    ...props
+  }, ref) => {
+    const Comp = asChild ? React.Fragment : "button";
+    
+    return (
+      <Comp
+        className={cn(
+          buttonVariants({ variant, size }),
+          className
+        )}
+        ref={ref}
+        {...props}
+      >
+        {icon && iconPosition === "left" && (
+          <span className="mr-2">{icon}</span>
+        )}
+        {children}
+        {icon && iconPosition === "right" && (
+          <span className="ml-2">{icon}</span>
+        )}
+      </Comp>
+    );
+  }
+);
 
 Button.displayName = "Button";
 
