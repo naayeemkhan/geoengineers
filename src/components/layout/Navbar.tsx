@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import CustomButton from "../ui/button";
+import { Button } from "../ui/button";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -69,12 +70,12 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <CustomButton 
+            <Button 
               size="sm" 
               className="ml-4"
             >
               Get a Quote
-            </CustomButton>
+            </Button>
           </nav>
 
           <button
@@ -128,9 +129,9 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4">
-                <CustomButton className="w-full justify-center">
+                <Button className="w-full justify-center">
                   Get a Quote
-                </CustomButton>
+                </Button>
               </div>
             </nav>
           </div>

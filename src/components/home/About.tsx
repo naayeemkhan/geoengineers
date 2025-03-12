@@ -1,8 +1,9 @@
+
 import React from "react";
 import Section from "../ui/Section";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/button";
+import { Button } from "../ui/button";
 
 const About = () => {
   const advantages = [
@@ -54,9 +55,9 @@ const About = () => {
           </div>
 
           <Link to="/about">
-            <CustomButton icon={<ArrowRight />} iconPosition="right">
+            <Button icon={<ArrowRight />} iconPosition="right">
               Learn More About Us
-            </CustomButton>
+            </Button>
           </Link>
         </div>
       </div>

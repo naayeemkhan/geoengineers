@@ -1,7 +1,8 @@
+
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/button";
+import { Button } from "../ui/button";
 
 const slideImages = [
   "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&q=80&w=2000&h=1000",
@@ -70,14 +71,14 @@ const Hero = () => {
           </p>
           <div className="flex flex-wrap gap-4 animate-slide-up animation-delay-400">
             <Link to="/services">
-              <CustomButton size="lg" className="bg-primary/90 hover:bg-primary" icon={<ArrowRight />} iconPosition="right">
+              <Button size="lg" className="bg-primary/90 hover:bg-primary" icon={<ArrowRight />} iconPosition="right">
                 Our Services
-              </CustomButton>
+              </Button>
             </Link>
             <Link to="/contact">
-              <CustomButton size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white/20 text-white">
+              <Button size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 border-white/20 text-white">
                 Contact Us
-              </CustomButton>
+              </Button>
             </Link>
           </div>
         </div>

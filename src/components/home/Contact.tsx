@@ -1,7 +1,8 @@
+
 import React from "react";
 import Section from "../ui/Section";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import CustomButton from "../ui/button";
+import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 
 const Contact = () => {
@@ -122,7 +123,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <CustomButton 
+                <Button 
                   type="submit" 
                   className="w-full md:w-auto" 
                   size="lg"
@@ -130,7 +131,7 @@ const Contact = () => {
                   iconPosition="right"
                 >
                   Send Message
-                </CustomButton>
+                </Button>
               </div>
             </form>
           </Card>

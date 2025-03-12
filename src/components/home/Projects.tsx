@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Section from "../ui/Section";
 import { Card, CardContent, CardTitle, CardDescription, CardImage } from "../ui/card";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/button";
+import { Button } from "../ui/button";
 
 const projectCategories = ["All", "Bridges", "Buildings", "Infrastructure", "Power"];
 
@@ -91,9 +91,9 @@ const Projects = () => {
                 {project.description}
               </CardDescription>
               <Link to={`/projects/${project.id}`}>
-                <CustomButton variant="ghost" className="p-0 hover:bg-transparent text-primary hover:text-primary/80">
+                <Button variant="ghost" className="p-0 hover:bg-transparent text-primary hover:text-primary/80">
                   View Project
-                </CustomButton>
+                </Button>
               </Link>
             </CardContent>
           </Card>
@@ -102,9 +102,9 @@ const Projects = () => {
       
       <div className="mt-12 text-center">
         <Link to="/projects">
-          <CustomButton size="lg">
+          <Button size="lg">
             View All Projects
-          </CustomButton>
+          </Button>
         </Link>
       </div>
     </Section>

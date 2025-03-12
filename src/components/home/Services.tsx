@@ -4,7 +4,7 @@ import { Compass, Building2, Lightbulb, PenTool } from "lucide-react";
 import Section from "../ui/Section";
 import { Card, CardContent, CardTitle, CardDescription } from "../ui/card";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/button";
+import { Button } from "../ui/button";
 
 const services = [
   {
@@ -59,9 +59,9 @@ const Services = () => {
                 {service.description}
               </CardDescription>
               <Link to={`/services#${service.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                <CustomButton variant="ghost" className="p-0 hover:bg-transparent text-primary hover:text-primary/80">
+                <Button variant="ghost" className="p-0 hover:bg-transparent text-primary hover:text-primary/80">
                   Learn more
-                </CustomButton>
+                </Button>
               </Link>
             </CardContent>
           </Card>
@@ -70,9 +70,9 @@ const Services = () => {
       
       <div className="mt-12 text-center">
         <Link to="/services">
-          <CustomButton size="lg">
+          <Button size="lg">
             View All Services
-          </CustomButton>
+          </Button>
         </Link>
       </div>
     </Section>
