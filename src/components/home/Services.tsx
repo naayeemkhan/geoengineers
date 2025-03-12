@@ -1,10 +1,9 @@
-
 import React from "react";
 import { Compass, Building2, Lightbulb, PenTool } from "lucide-react";
 import Section from "../ui/Section";
-import { Card, CardContent, CardTitle, CardDescription } from "../ui/Card";
+import { Card, CardContent, CardTitle, CardDescription } from "../ui/card";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/Button";
+import CustomButton from "../ui/button";
 
 const services = [
   {

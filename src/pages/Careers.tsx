@@ -1,11 +1,10 @@
-
 import React, { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Section from "@/components/ui/Section";
-import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/Card";
+import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 import { Briefcase, MapPin, Clock, ArrowRight, CheckCircle2, Users, Coffee, Heart } from "lucide-react";
-import CustomButton from "@/components/ui/Button";
+import CustomButton from "@/components/ui/button";
 
 const Careers = () => {
   useEffect(() => {

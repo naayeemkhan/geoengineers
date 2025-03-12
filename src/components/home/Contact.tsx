@@ -1,9 +1,8 @@
-
 import React from "react";
 import Section from "../ui/Section";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import CustomButton from "../ui/Button";
-import { Card } from "../ui/Card";
+import CustomButton from "../ui/button";
+import { Card } from "../ui/card";
 
 const Contact = () => {
   return (

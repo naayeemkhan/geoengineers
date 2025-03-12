@@ -1,9 +1,8 @@
-
 import React from "react";
 import Section from "../ui/Section";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/Button";
+import CustomButton from "../ui/button";
 
 const About = () => {
   const advantages = [

@@ -1,8 +1,7 @@
-
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/Button";
+import CustomButton from "../ui/button";
 
 const slideImages = [
   "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&q=80&w=2000&h=1000",

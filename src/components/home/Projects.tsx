@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import Section from "../ui/Section";
-import { Card, CardImage, CardContent, CardTitle, CardDescription } from "../ui/Card";
+import { Card, CardContent, CardTitle, CardDescription, CardImage } from "../ui/card";
 import { Link } from "react-router-dom";
-import CustomButton from "../ui/Button";
+import CustomButton from "../ui/button";
 
 const projectCategories = ["All", "Bridges", "Buildings", "Infrastructure", "Power"];
 

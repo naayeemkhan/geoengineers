@@ -1,9 +1,8 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Section from "@/components/ui/Section";
-import { Card, CardContent, CardTitle } from "@/components/ui/Card";
+import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 import { CheckCircle2, Target, TrendingUp, Users, Shield, Award } from "lucide-react";
 
 const About = () => {

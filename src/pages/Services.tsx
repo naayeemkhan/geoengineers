@@ -1,10 +1,9 @@
-
 import React, { useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Section from "@/components/ui/Section";
 import { Compass, Building2, PenTool, Lightbulb, BarChart, FileText, Clock, Zap } from "lucide-react";
-import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/Card";
+import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 
 const servicesData = [
   {
