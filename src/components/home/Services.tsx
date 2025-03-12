@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Compass, Building2, Lightbulb, PenTool } from "lucide-react";
 import Section from "../ui/Section";
@@ -48,8 +49,8 @@ const Services = () => {
         {services.map((service) => (
           <Card 
             key={service.id} 
-            className={`animate-scale-in ${service.delay} hover`}
-            hover
+            className={`animate-scale-in ${service.delay}`}
+            hover={true}
           >
             <CardContent className="pt-8">
               <div className="mb-6">{service.icon}</div>

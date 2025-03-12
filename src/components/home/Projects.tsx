@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Section from "../ui/Section";
 import { Card, CardContent, CardTitle, CardDescription, CardImage } from "../ui/card";
@@ -77,8 +78,8 @@ const Projects = () => {
         {filteredProjects.map((project) => (
           <Card 
             key={project.id} 
-            className={`animate-scale-in ${project.delay} hover`}
-            hover
+            className={`animate-scale-in ${project.delay}`}
+            hover={true}
           >
             <CardImage src={project.image} alt={project.title} />
             <CardContent>
