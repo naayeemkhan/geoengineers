@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 const About = () => {
   const advantages = [
-    "25+ years of industry experience",
+    "16+ years of industry experience",
     "Team of certified professional engineers",
     "Commitment to quality and sustainability",
     "Innovative solutions for complex challenges",
@@ -35,7 +35,7 @@ const About = () => {
         <div className="animate-slide-up">
           <span className="text-sm font-medium text-primary">About Us</span>
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 mt-2">
-            Engineering Excellence Since 1998
+            Engineering Excellence Since 2009
           </h2>
           <p className="text-muted-foreground mb-6">
             At GeoEngineers, we combine technical expertise with innovative thinking to deliver engineering solutions that exceed expectations. Our multidisciplinary team approaches each project with a commitment to quality, safety, and sustainability.

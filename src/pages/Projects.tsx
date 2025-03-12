@@ -12,32 +12,32 @@ const projectCategories = ["All", "Bridges", "Buildings", "Infrastructure", "Pow
 const projects = [
   {
     id: 1,
-    title: "Modern Office Complex",
-    description: "A state-of-the-art commercial building with sustainable design principles and energy-efficient systems.",
+    title: "J&K Cable Car Corpration",
+    description: "Surveying and Design of various Projects with JKCCC.",
     category: "Buildings",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800&h=500",
     delay: ""
   },
   {
     id: 2,
-    title: "Riverside Bridge",
-    description: "An award-winning suspension bridge connecting communities with minimal environmental impact.",
+    title: "Danthrad  Bridge",
+    description: "3*10 m span Bridge in Anantnag.",
     category: "Bridges",
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800&h=500",
     delay: "animation-delay-200"
   },
   {
     id: 3,
-    title: "Urban Metro Station",
-    description: "Modern transit hub designed for efficiency and passenger comfort with advanced structural solutions.",
+    title: "Police Construction Division",
+    description: "Design & Consultancy of 29 police stations across J&K.",
     category: "Infrastructure",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800&h=500",
     delay: "animation-delay-400"
   },
   {
     id: 4,
-    title: "Solar Power Plant",
-    description: "Renewable energy facility with innovative engineering solutions for maximum efficiency.",
+    title: "PMGSY Road Survey",
+    description: "Conducted Road Survey and DPR of 150 km of road across district Budgam, Ganderbal and Pulwama in J&K. ",
     category: "Power",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800&h=500",
     delay: "animation-delay-600"

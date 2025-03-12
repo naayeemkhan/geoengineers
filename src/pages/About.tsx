@@ -97,7 +97,7 @@ const About = () => {
             <div className="animate-slide-up">
               <h2 className="text-3xl font-display font-bold mb-6">Our Company</h2>
               <p className="text-muted-foreground mb-6">
-                Founded in 1998, GeoEngineers has grown from a small local consultancy to a respected engineering firm with a national presence. Over the past 25 years, we have successfully delivered hundreds of projects across India, establishing ourselves as industry leaders in structural engineering, surveying, and infrastructure development.
+                Founded in 2009, GeoEngineers has grown from a small local consultancy to a respected engineering firm with a national presence. Over the past 16 years, we have successfully delivered hundreds of projects across India, establishing ourselves as industry leaders in structural engineering, surveying, and infrastructure development.
               </p>
               <p className="text-muted-foreground mb-8">
                 Our multidisciplinary team combines technical expertise with innovative thinking to solve complex engineering challenges. We approach each project with a commitment to excellence, sustainability, and client satisfaction, resulting in long-lasting relationships with our partners and clients.
@@ -107,7 +107,7 @@ const About = () => {
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium">25+ Years of Experience</h4>
+                    <h4 className="font-medium">16+ Years of Experience</h4>
                     <p className="text-muted-foreground">Delivering engineering excellence since 1998</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ const About = () => {
                 <div className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" />
                   <div>
-                    <h4 className="font-medium">Team of 50+ Professionals</h4>
+                    <h4 className="font-medium">Team of 10+ Professionals</h4>
                     <p className="text-muted-foreground">Certified engineers and technical experts</p>
                   </div>
                 </div>
@@ -184,29 +184,7 @@ const About = () => {
           </div>
         </Section>
 
-        {/* Team */}
-        <Section title="Our Leadership Team" subtitle="Meet the experts behind our engineering excellence" className="bg-secondary">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className={`animate-scale-in animation-delay-${index * 200}`} hover>
-                <div className="aspect-square overflow-hidden">
-                  <img 
-                    src={member.image} 
-                    alt={member.name} 
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                  />
-                </div>
-                <CardContent className="p-6 text-center">
-                  <CardTitle className="mb-1">{member.name}</CardTitle>
-                  <p className="text-primary font-medium mb-3">{member.position}</p>
-                  <p className="text-muted-foreground">
-                    {member.bio}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </Section>
+      
       </main>
       <Footer />
     </div>

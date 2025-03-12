@@ -60,12 +60,13 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center">
         <div className="max-w-3xl animate-fade-in">
-          <span className="inline-block px-3 py-1 mb-6 text-sm font-medium bg-primary/90 text-white rounded-full animate-slide-up">
-            Engineering Excellence
+          <span className="inline-block px-3 py-1 mb-6 text-4xl font-medium bg-primary/90 text-white rounded-full animate-slide-up">
+           Making Projects Happen
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-6 animate-slide-up">
-            Shaping the Future with Innovative Engineering Solutions
+           GEOENGINEERS
           </h1>
+          
           <p className="text-xl text-white/90 mb-8 animate-slide-up animation-delay-200">
             From concept to completion, we deliver exceptional engineering services that transform visions into reality.
           </p>

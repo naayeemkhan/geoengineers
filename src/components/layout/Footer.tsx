@@ -15,7 +15,7 @@ const Footer = () => {
               <span>Engineers</span>
             </h3>
             <p className="text-muted-foreground mb-6">
-              Shaping the future through innovative engineering solutions. We engineer excellence.
+             Making Projects Happen
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
@@ -104,16 +104,16 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 text-primary mt-1 mr-3 flex-shrink-0" />
                 <span className="text-foreground/60">
-                  123 Engineering Way, Tech Park, Bangalore, India 560001
+                  3rd Floor Enco Plaza KaranNagar, Srinagar,J&K.
                 </span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                <span className="text-foreground/60">+91 9876543210</span>
+                <span className="text-foreground/60">+91-7889395886</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                <span className="text-foreground/60">info@geoengineers.in</span>
+                <span className="text-foreground/60">geoengineers@ymail.com</span>
               </div>
             </div>
           </div>

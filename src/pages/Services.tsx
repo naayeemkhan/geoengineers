@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Section from "@/components/ui/Section";
-import { Compass, Building2, PenTool, Lightbulb, BarChart, FileText, Clock, Zap } from "lucide-react";
+import { Compass, Building2, PenTool, Lightbulb, BarChart, FileText, Clock, Zap,Landmark,FlaskConical,Route,Ruler } from "lucide-react";
 import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 
 const servicesData = [
@@ -52,6 +52,66 @@ const servicesData = [
       { title: "Transmission Networks", icon: <Building2 className="w-5 h-5" /> },
       { title: "Distribution Design", icon: <FileText className="w-5 h-5" /> },
       { title: "Renewable Integration", icon: <BarChart className="w-5 h-5" /> }
+    ]
+  },
+  {
+    id: "detailed-project-report",
+    title: "Detailed Project Report (DPR)",
+    description: "Our DPR services provide in-depth project documentation, covering feasibility analysis, cost estimation, risk assessment, and technical evaluations. We help stakeholders make informed decisions by delivering comprehensive reports aligned with regulatory standards.",
+    icon: <FileText className="w-12 h-12 text-primary" />,
+    features: [
+      { title: "Feasibility Studies", icon: <BarChart className="w-5 h-5" /> },
+      { title: "Cost Estimation", icon: <Zap className="w-5 h-5" /> },
+      { title: "Risk Analysis", icon: <FileText className="w-5 h-5" /> },
+      { title: "Regulatory Compliance", icon: <Building2 className="w-5 h-5" /> }
+    ]
+  },
+  {
+    id: "road-surveying",
+    title: "Road Surveying",
+    description: "We offer precise road surveying services for highway planning, pavement evaluation, and maintenance. Using cutting-edge geospatial technology, we provide accurate data to support safe and efficient road infrastructure development.",
+    icon: <Route className="w-12 h-12 text-primary" />,
+    features: [
+      { title: "Alignment Studies", icon: <PenTool className="w-5 h-5" /> },
+      { title: "Pavement Evaluation", icon: <BarChart className="w-5 h-5" /> },
+      { title: "Traffic Analysis", icon: <Zap className="w-5 h-5" /> },
+      { title: "GIS Mapping", icon: <FileText className="w-5 h-5" /> }
+    ]
+  },
+  {
+    id: "cad-designs",
+    title: "CAD Designs",
+    description: "We specialize in high-quality computer-aided design (CAD) services, producing detailed 2D and 3D models for architectural, structural, and engineering projects. Our designs ensure accuracy, efficiency, and adherence to industry standards.",
+    icon: <Ruler className="w-12 h-12 text-primary" />,
+    features: [
+      { title: "2D Drafting", icon: <FileText className="w-5 h-5" /> },
+      { title: "3D Modeling", icon: <Building2 className="w-5 h-5" /> },
+      { title: "BIM Integration", icon: <Zap className="w-5 h-5" /> },
+      { title: "Rendering & Visualization", icon: <BarChart className="w-5 h-5" /> }
+    ]
+  },
+  {
+    id: "soil-testing",
+    title: "Soil Testing",
+    description: "Our soil testing services analyze soil composition, strength, and suitability for construction and agricultural applications. We ensure foundation stability by assessing load-bearing capacity, moisture content, and other key parameters.",
+    icon: <FlaskConical className="w-12 h-12 text-primary" />,
+    features: [
+      { title: "Soil Composition Analysis", icon: <BarChart className="w-5 h-5" /> },
+      { title: "Moisture & Density Testing", icon: <Zap className="w-5 h-5" /> },
+      { title: "Load-Bearing Assessment", icon: <FileText className="w-5 h-5" /> },
+      { title: "Environmental Testing", icon: <Building2 className="w-5 h-5" /> }
+    ]
+  },
+  {
+    id: "architectural-design",
+    title: "Architectural Design",
+    description: "Our architectural design services blend creativity with functionality to craft innovative and sustainable spaces. From concept to execution, we focus on aesthetics, structural integrity, and environmental efficiency.",
+    icon: <Landmark className="w-12 h-12 text-primary" />,
+    features: [
+      { title: "Conceptual Design", icon: <PenTool className="w-5 h-5" /> },
+      { title: "Sustainable Architecture", icon: <Zap className="w-5 h-5" /> },
+      { title: "3D Visualization", icon: <Building2 className="w-5 h-5" /> },
+      { title: "Construction Drawings", icon: <FileText className="w-5 h-5" /> }
     ]
   }
 ];

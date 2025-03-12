@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Compass, Building2, Lightbulb, PenTool } from "lucide-react";
+import { Compass, Building2, Lightbulb, PenTool ,FileText, Route ,Ruler ,FlaskConical,Landmark} from "lucide-react";
 import Section from "../ui/Section";
 import { Card, CardContent, CardTitle, CardDescription } from "../ui/card";
 import { Link } from "react-router-dom";
@@ -34,8 +34,44 @@ const services = [
     description: "Comprehensive engineering services for energy infrastructure, from generation facilities to distribution networks.",
     icon: <Lightbulb className="w-10 h-10 text-primary" />,
     delay: "animation-delay-600"
+  },
+  {
+    id: 5,
+    title: "Detailed Project Report (DPR)",
+    description: "In-depth project documentation, including feasibility studies, cost analysis, and technical assessments to guide project execution.",
+    icon: <FileText className="w-10 h-10 text-primary" />,
+    delay: "animation-delay-800"
+  },
+  {
+    id: 6,
+    title: "Road Surveying",
+    description: "Accurate assessment and mapping of road infrastructure to support planning, design, and maintenance projects.",
+    icon: <Route className="w-10 h-10 text-primary" />,
+    delay: "animation-delay-1000"
+  },
+  {
+    id: 7,
+    title: "CAD Designs",
+    description: "High-quality computer-aided design (CAD) services for precise engineering drawings and architectural plans.",
+    icon: <Ruler className="w-10 h-10 text-primary" />,
+    delay: "animation-delay-1200"
+  },
+  {
+    id: 8,
+  title: "Soil Testing",
+  description: "Comprehensive soil analysis to assess composition, strength, and suitability for construction and agricultural applications.",
+  icon: <FlaskConical className="w-10 h-10 text-primary" />, // Use FlaskConical instead
+  delay: "animation-delay-1400"
+  },
+  {
+    id: 9,
+    title: "Architectural Design",
+    description: "Creative and functional architectural solutions that align with modern trends, sustainability, and user needs.",
+    icon: <Landmark className="w-10 h-10 text-primary" />,
+    delay: "animation-delay-1600"
   }
 ];
+
 
 const Services = () => {
   return (

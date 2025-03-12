@@ -85,7 +85,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium mb-1">Address</h4>
                   <p className="text-muted-foreground">
-                    123 Engineering Way, Tech Park, Bangalore, India 560001
+                    3rd Floor ENCO plaza KaranNagar Srinagar,J&K
                   </p>
                 </div>
               </div>
@@ -94,8 +94,8 @@ const Contact = () => {
                 <Phone className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-medium mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+91 9876543210</p>
-                  <p className="text-muted-foreground">+91 8765432109</p>
+                  <p className="text-muted-foreground">+91 7889395886</p>
+                 
                 </div>
               </div>
               
@@ -103,8 +103,8 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-primary mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-medium mb-1">Email</h4>
-                  <p className="text-muted-foreground">info@geoengineers.in</p>
-                  <p className="text-muted-foreground">projects@geoengineers.in</p>
+                  <p className="text-muted-foreground">geoengineers@ymail.com</p>
+                  
                 </div>
               </div>
             </div>
@@ -118,7 +118,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Saturday:</p>
-                  <p className="text-muted-foreground">9:00 AM - 1:00 PM</p>
+                  <p className="text-muted-foreground">9:00 AM - 4:00 PM</p>
                 </div>
                 <div className="col-span-2">
                   <p className="font-medium">Sunday:</p>
