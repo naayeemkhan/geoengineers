@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+
+import React, { useState, useEffect } from "react";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import Section from "@/components/ui/Section";
-import { Card, CardImage, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
-import { Link } from "react-router-dom";
-import CustomButton from "@/components/ui/button";
+import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
+import { Link, useLocation } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 const projectCategories = ["All", "Bridges", "Buildings", "Infrastructure", "Power"];
 
@@ -43,70 +46,84 @@ const projects = [
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const filteredProjects = activeCategory === "All" 
     ? projects 
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <Section
-      id="projects"
-      title="Featured Projects"
-      subtitle="Explore our portfolio of successful engineering projects across various domains"
-      className="bg-secondary"
-    >
-      {/* Category Filter */}
-      <div className="flex flex-wrap justify-center gap-2 mb-12">
-        {projectCategories.map((category) => (
-          <button
-            key={category}
-            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-              activeCategory === category
-                ? "bg-primary text-white"
-                : "bg-white text-foreground hover:bg-primary/10"
-            }`}
-            onClick={() => setActiveCategory(category)}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      <main className="flex-grow pt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl font-display font-bold mb-4">Our Projects</h1>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Explore our portfolio of successful engineering projects across various domains
+            </p>
+          </div>
+        </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
-        {filteredProjects.map((project) => (
-          <Card 
-            key={project.id} 
-            className={`animate-scale-in ${project.delay} hover`}
-            hover
-          >
-            <CardImage src={project.image} alt={project.title} />
-            <CardContent>
-              <span className="inline-block px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded mb-2">
-                {project.category}
-              </span>
-              <CardTitle>{project.title}</CardTitle>
-              <CardDescription className="mb-4">
-                {project.description}
-              </CardDescription>
-              <Link to={`/projects/${project.id}`}>
-                <CustomButton variant="ghost" className="p-0 hover:bg-transparent text-primary hover:text-primary/80">
-                  View Project
-                </CustomButton>
-              </Link>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-      
-      <div className="mt-12 text-center">
-        <Link to="/projects">
-          <CustomButton size="lg">
-            View All Projects
-          </CustomButton>
-        </Link>
-      </div>
-    </Section>
+        {/* Category Filter */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center gap-2 mb-12">
+            {projectCategories.map((category) => (
+              <button
+                key={category}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  activeCategory === category
+                    ? "bg-primary text-white"
+                    : "bg-white text-foreground hover:bg-primary/10"
+                }`}
+                onClick={() => setActiveCategory(category)}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredProjects.map((project) => (
+              <Card 
+                key={project.id} 
+                className={`animate-scale-in ${project.delay}`}
+              >
+                <div className="aspect-w-16 aspect-h-9">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="object-cover w-full h-48 rounded-t-lg"
+                  />
+                </div>
+                <CardContent>
+                  <span className="inline-block px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded mb-2">
+                    {project.category}
+                  </span>
+                  <CardTitle>{project.title}</CardTitle>
+                  <CardDescription className="mb-4">
+                    {project.description}
+                  </CardDescription>
+                  <Link to={`/projects/${project.id}`}>
+                    <Button variant="ghost" className="p-0 hover:bg-transparent text-primary hover:text-primary/80">
+                      View Project
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
