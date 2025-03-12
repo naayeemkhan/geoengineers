@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
@@ -18,6 +18,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,6 +36,10 @@ const Navbar = () => {
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location]);
+
+  const handleGetQuote = () => {
+    navigate('/contact');
+  };
 
   return (
     <header
@@ -73,6 +78,7 @@ const Navbar = () => {
             <Button 
               size="sm" 
               className="ml-4"
+              onClick={handleGetQuote}
             >
               Get a Quote
             </Button>
@@ -129,7 +135,10 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="pt-4">
-                <Button className="w-full justify-center">
+                <Button 
+                  className="w-full justify-center"
+                  onClick={handleGetQuote}
+                >
                   Get a Quote
                 </Button>
               </div>
